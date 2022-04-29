@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AnswerAPP_EstefanyPacheco.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="background.jpg"
+             NavigationPage.HasNavigationBar="False">
+    
+    
+    
+    <ContentPage.Content>
+        <StackLayout Padding="50,50,50,50" VerticalOptions="Center">
+
+            <Entry x:Name="TxtUserName" Placeholder="Email" TextTransform="Lowercase" FontSize="Large" TextColor="White" Keyboard="Email" />
+            
+            <Entry x:Name="TxtPassword" IsPassword="True" Placeholder="Password" FontSize="Large" TextColor="White" />
+            
+            <Switch x:Name="SwSeePassword" IsToggled="False" Toggled="CmdSeePassword"/>
+            
+            <Button x:Name="BtnLogin" VerticalOptions="Center" Text="Login"  FontSize="Large" CornerRadius="20" TextColor="White" BackgroundColor="DeepPink" BorderColor="White" BorderWidth="1" Clicked="BtnLogin_Clicked"/>
+            
+            <Button x:Name="BtnRegister" VerticalOptions="Center" Text="Register" FontSize="Large" CornerRadius="20" TextColor="White" BackgroundColor="HotPink" BorderColor="White" BorderWidth="1" Clicked="CmdUserRegister"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
